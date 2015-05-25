@@ -13,6 +13,7 @@ typedef NS_ENUM(NSUInteger, ZFModalTransitonDirection) {
     ZFModalTransitonDirectionBottom,
     ZFModalTransitonDirectionLeft,
     ZFModalTransitonDirectionRight,
+    ZFModalTransitonDirectionTop
 };
 
 @interface ZFDetectScrollViewEndGestureRecognizer : UIPanGestureRecognizer

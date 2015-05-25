@@ -113,6 +113,12 @@
                                    CGRectGetWidth(containerView.bounds),
                                    CGRectGetHeight(containerView.bounds));
         }
+        else if (self.direction == ZFModalTransitonDirectionTop) {
+            startRect = CGRectMake(0,
+                                   -CGRectGetHeight(containerView.frame),
+                                   CGRectGetWidth(containerView.bounds),
+                                   CGRectGetHeight(containerView.bounds));
+        }
 
         CGPoint transformedPoint = CGPointApplyAffineTransform(startRect.origin, toViewController.view.transform);
         toViewController.view.frame = CGRectMake(transformedPoint.x, transformedPoint.y, startRect.size.width, startRect.size.height);
@@ -162,6 +168,12 @@
                                  0,
                                  CGRectGetWidth(fromViewController.view.frame),
                                  CGRectGetHeight(fromViewController.view.frame));
+        }
+        else if (self.direction == ZFModalTransitonDirectionTop) {
+            endRect = CGRectMake(CGRectGetWidth(containerView.frame),
+                                 CGRectGetHeight(containerView.frame),
+                                 CGRectGetWidth(containerView.bounds),
+                                 CGRectGetHeight(containerView.bounds));
         }
 
         CGPoint transformedPoint = CGPointApplyAffineTransform(endRect.origin, fromViewController.view.transform);
