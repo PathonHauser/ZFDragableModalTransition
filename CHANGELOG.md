@@ -1,5 +1,19 @@
 # ZFDragableModalTransition CHANGELOG
 
+## 0.6
+
+- fix #50 In-call status bar animation make the dismissing end up in wrong scale
+- fix #51
+- fix wrongly handle `modalPresentationStyle` options
+
+## 0.5.1
+
+- fix animator strongly reference to modal view controller
+
+## 0.5.0
+
+- added neccessary appearance methods call for view controller
+
 ## 0.4.0
 
 - fix sometimes layout mess when rotate, wrong scale in iOS7

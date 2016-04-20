@@ -23,6 +23,8 @@
 
     // set transition delegate of modal view controller to our object
     detailViewController.transitioningDelegate = self.animator;
+
+    // if you modal cover all behind view controller, use UIModalPresentationFullScreen
     detailViewController.modalPresentationStyle = UIModalPresentationCustom;
 }
 ```
@@ -58,6 +60,10 @@ The current ViewController's view still visible behind the modal, so you just se
 ## Author
 
 Amornchai Kanokpullwad, [@zoonref](https://twitter.com/zoonref)
+
+##  Swift Version
+
+by @dimohamdy [ZFDragableModalTransitionSwift](https://github.com/dimohamdy/ZFDragableModalTransitionSwift)
 
 ## License
 
